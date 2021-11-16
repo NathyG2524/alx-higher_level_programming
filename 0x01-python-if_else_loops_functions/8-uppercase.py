@@ -5,4 +5,4 @@ def uppercase(str):
             print(chr((ord(x)-97)+65), end="")
         else:
             print(x, end="")
-    print()
+    print('')
