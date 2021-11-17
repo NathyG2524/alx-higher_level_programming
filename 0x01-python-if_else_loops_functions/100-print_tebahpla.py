@@ -4,4 +4,4 @@ for x in range(90, 64, -1):
         alpha = x
     else:
         alpha = x + 32
-    print(chr(alpha), end="")
+    print("{:s}".format(chr(alpha)), end="")
