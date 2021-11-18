@@ -14,4 +14,4 @@ if __name__ == "__main__":
         for i, arg in enumerate(sys.argv):
             if i == 0:
                 continue
-            print('{}: {}'.format(i - 1, arg))
+            print('{}: {}'.format(i, arg))
