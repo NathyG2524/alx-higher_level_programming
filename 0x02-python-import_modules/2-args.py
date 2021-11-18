@@ -6,8 +6,12 @@ if __name__ == "__main__":
     elif len(sys.argv) == 1:
         print(f"{len(sys.argv)} argument: ")
         for i, arg in enumerate(sys.argv):
+            if i == 0:
+                continue
             print('{}: {}'.format(len(sys.argv), arg))
     else:
         print(f"{len(sys.argv)} arguments: ")
         for i, arg in enumerate(sys.argv):
+            if i == 0:
+                continue
             print('{}: {}'.format(i, arg))
