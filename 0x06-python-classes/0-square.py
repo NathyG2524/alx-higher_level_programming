@@ -1,3 +1,7 @@
-#!bin/bash/python3
+#!usr/bin/python3
+
+
 class square:
+    '''Class Square empty class
+    '''
     pass
