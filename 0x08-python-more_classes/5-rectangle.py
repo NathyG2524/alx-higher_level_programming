@@ -4,6 +4,7 @@ rectangle module
 a rectangle class module
 """
 
+
 class Rectangle:
     """
     class: Rectangle
