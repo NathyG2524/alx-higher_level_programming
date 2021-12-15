@@ -16,6 +16,11 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """
+        method: square
+        :param size: length of the sides
+        :return: side length
+        """
         if not isinstance(size, int):
             raise TypeError("width must be an integer")
         if size < 0:
