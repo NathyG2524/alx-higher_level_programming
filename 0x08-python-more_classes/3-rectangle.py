@@ -86,10 +86,11 @@ class Rectangle:
         method: __str__
         :return: readable string to the user
         """
-        string = ""
-        if self.__width != 0 and self.__height != 0:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    string += "#"
-                string += "\n"
-        return string
+        ret_str = ""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        for idx in range(self.__height):
+            ret_str += '#' * self.width
+            if idx + 1 < self.__height:
+                ret_str += '\n'
+        return ret_str
