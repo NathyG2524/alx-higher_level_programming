@@ -105,4 +105,4 @@ class Rectangle:
         method: __del__
         :return: delete instance of Rectangle
         """
-        print("Bye rectangle . . .")
+        print("Bye rectangle. . .")
