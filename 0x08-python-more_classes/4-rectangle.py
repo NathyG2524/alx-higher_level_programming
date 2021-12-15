@@ -91,7 +91,8 @@ class Rectangle:
             for i in range(self.__height):
                 for j in range(self.__width):
                     string += "#"
-                string += "\n"
+                if i != max(range(self.__height)):
+                    string += "\n"
         return string
 
     def __repr__(self):
@@ -100,3 +101,4 @@ class Rectangle:
         :return: official string representation of an object
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
