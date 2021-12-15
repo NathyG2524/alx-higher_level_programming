@@ -10,6 +10,7 @@ class Rectangle:
     class: Rectangle
     this is a class rectangle
     """
+
     def __init__(self, width=0, height=0):
         """
         method: __init__
@@ -90,7 +91,8 @@ class Rectangle:
             for i in range(self.__height):
                 for j in range(self.__width):
                     string += "#"
-                string += "\n"
+                if i != max(range(self.__height)):
+                    string += "\n"
         return string
 
     def __repr__(self):
