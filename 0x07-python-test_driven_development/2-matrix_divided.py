@@ -20,10 +20,16 @@ def matrix_divided(matrix, div):
         if not isinstance(li, list):
             raise TypeError("matrix must be a matrix (list of list)"
                             " of integers or float")
+
         if length is None:
             length = len(li)
         elif length != len(li):
             raise TypeError("Each row of the matrix must have the same size")
+        for element in li:
+            if not isinstance(element, int):
+                raise TypeError("matrix must be a matrix (list of list)"
+                                " of integers or float")
+
     if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
     if div == 0:
