@@ -4,7 +4,7 @@ Square #1
 """
 
 
-BaseGeometry = __import__('7-base_geometery').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 
 
