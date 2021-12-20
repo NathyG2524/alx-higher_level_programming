@@ -34,3 +34,8 @@ ValueError: distance must be greater than 0
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
+>>> bg.integer_validator("width", 89.5)
+Traceback (most recent call last):
+...
+TypeError: width must be an integer
