@@ -10,7 +10,6 @@ def read_file(filename=""):
     :param filename:
     :return:
     """
-    with open(filename) as myfile:
-        readfile = myfile.read()
-        print(read_file, end="")
-    
+    with open(filename) as file:
+        readfile = file.read()
+        print(readfile, end="")
