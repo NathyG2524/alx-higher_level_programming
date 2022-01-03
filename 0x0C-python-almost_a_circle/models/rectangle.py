@@ -125,6 +125,7 @@ class Rectangle(Base):
                 self.id = value
 
     def to_dictionary(self):
+        """ list out dictionary"""
         dic = {
             'x': self.__x,
             'y': self.__y,
