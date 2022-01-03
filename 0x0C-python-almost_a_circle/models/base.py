@@ -68,7 +68,7 @@ class Base:
     def create(cls, **dictionary):
         """ create"""
         if cls.__name__ == 'Rectangle':
-            dummy = cls(6, 1, 7)
+            dummy = cls(1, 1)
         else:
             dummy = cls(1)
         dummy.update(**dictionary)
