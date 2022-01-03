@@ -27,13 +27,15 @@ class Square(Rectangle):
     def __str__(self):
         return ("[Square] ({}) {}/{} - {}"
                 .format(self.id, self.x, self.y, self.width))
-    
+
     @property
     def size(self):
+        """get size"""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """set size"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -41,6 +43,7 @@ class Square(Rectangle):
         self.__size = value
 
     def update(self, *args, **kwargs):
+        """update square"""
         for arg in args:
             i = args.index(arg)
             while i < len(args):
@@ -64,6 +67,7 @@ class Square(Rectangle):
                 self.id = value
 
     def to_dictionary(self):
+        """ list out dictionary"""
         dic = {
             'x': self.x,
             'y': self.y,
@@ -71,4 +75,3 @@ class Square(Rectangle):
             'size': self.height
         }
         return dic
-    
