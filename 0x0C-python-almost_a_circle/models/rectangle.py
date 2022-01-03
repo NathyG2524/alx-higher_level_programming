@@ -3,6 +3,7 @@
 First Rectangle
 """
 
+
 from models.base import Base
 
 
@@ -84,7 +85,6 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-
     def __str__(self):
         return ("[Rectangle] ({}) {}/{} - {}/{}"
                 .format(self.id, self.__x, self.__y, self.__width, self.__height))
@@ -115,3 +115,13 @@ class Rectangle(Base):
                 self.__y = value
             elif key == "id":
                 self.id = value
+
+    def to_dictionary(self):
+        dic = {
+            'x': self.__x,
+            'y': self.__y,
+            'id': self.id,
+            'height': self.__height,
+            'width': self.__width
+        }
+        return dic

@@ -22,11 +22,12 @@ class Square(Rectangle):
         """
 
         self.size = size
-        super().__init__(size, size, x, y, id )
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         return ("[Square] ({}) {}/{} - {}"
                 .format(self.id, self.x, self.y, self.width))
+    
     @property
     def size(self):
         return self.__size
@@ -62,4 +63,12 @@ class Square(Rectangle):
             elif key == "id":
                 self.id = value
 
-
+    def to_dictionary(self):
+        dic = {
+            'x': self.x,
+            'y': self.y,
+            'id': self.id,
+            'size': self.height
+        }
+        return dic
+    
