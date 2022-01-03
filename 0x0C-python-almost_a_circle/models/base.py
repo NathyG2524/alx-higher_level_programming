@@ -38,3 +38,14 @@ class Base:
             name = i.__class__.__name__ + ".json"
             with open(name, "w") as f:
                 f.write(cls.to_json_string(dic_1))
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """save to file"""
+        dic_1 = []
+        for i in (list_objs):
+            dic_2 = i.to_dictionary()
+            dic_1.append(dic_2)
+            name = i.__class__.__name__ + ".json"
+            with open(name, "w") as f:
+                f.write(cls.to_json_string(dic_1))

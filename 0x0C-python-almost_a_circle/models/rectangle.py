@@ -130,7 +130,7 @@ class Rectangle(Base):
             'x': self.__x,
             'y': self.__y,
             'id': self.id,
-            'height': self.__height,
-            'width': self.__width
+            'width': self.__width,
+            'height': self.__height
         }
         return dic
