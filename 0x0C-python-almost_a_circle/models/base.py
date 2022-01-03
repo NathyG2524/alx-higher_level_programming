@@ -46,7 +46,7 @@ class Base:
         bar = cls.__name__ + ".json"
         if list_objs is None:
             with open(bar, "w") as f:
-                f.write([])
+                f.write("[]")
         for i in list_objs:
             dic_2 = i.to_dictionary()
             dic_1.append(dic_2)
