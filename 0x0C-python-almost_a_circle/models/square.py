@@ -63,3 +63,16 @@ class Square(Rectangle):
                 self.y = value
             elif key == "id":
                 self.id = value
+
+    def to_dictionary(self):
+        """
+        list out dictionary
+        :return:
+        """
+        dic = {
+            'x': self.x,
+            'y': self.y,
+            'id': self.id,
+            'size': self.height
+        }
+        return dic
