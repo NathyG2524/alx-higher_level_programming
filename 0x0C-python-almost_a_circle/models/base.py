@@ -66,6 +66,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """ create"""
         if cls.__name__ == 'Rectangle':
             dummy = cls(6, 1, 7)
         else:
