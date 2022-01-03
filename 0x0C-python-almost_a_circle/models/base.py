@@ -82,7 +82,6 @@ class Base:
             fname = cls.__name__ + ".json"
             with open(fname, "r") as f:
                 ppd = cls.from_json_string(f.read())
-                print(type(ppd))
                 for i in ppd:
                     output.append(cls.create(**i))
             return output
