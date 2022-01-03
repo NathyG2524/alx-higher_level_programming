@@ -73,3 +73,18 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """load from file"""
+        output = []
+        try:
+            fname = cls.__name__ + ".json"
+            with open(fname, "r") as f:
+                ppd = cls.from_json_string(f.read())
+                print(type(ppd))
+                for i in ppd:
+                    output.append(cls.create(**i))
+            return output
+        except:
+            return output
