@@ -1,5 +1,5 @@
-##Python - Object-relational mapping
-#Background Context
+# Python - Object-relational mapping
+## Background Context
 In this project, you will link two amazing worlds: Databases and Python!
 
 In the first part, you will use the module MySQLdb to connect to a MySQL database and execute your SQL queries.
