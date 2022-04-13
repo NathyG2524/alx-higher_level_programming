@@ -11,9 +11,12 @@ request(url, function (error, response, body) {
   } else {
     let count = 0;
     const result = JSON.parse(body).results;
+
     for (let i = 0; i < result.length; i++) {
-      for (let j = 0; j < result[i].characters; j++) {
-        if (result[i].characters.endsWith('18/')) {
+      const characters = result[i].characters;
+      for (let j = 0; j < characters.length; j++) {
+        const check = characters[j].endsWith('18/');
+        if (check) {
           count++;
         }
       }
